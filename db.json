@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "name": "SAGAR RAJPUT",
+      "email": "rajputsagar7798@gmail.com",
+      "city": "AURANGABAD",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "name": "AMOL RAJPUT",
+      "email": "rajputsagar7798@gmail.com",
+      "city": "AURANGABAD",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "name": "RAHUL RAJPUT",
+      "email": "rajputsagar7798@gmail.com",
+      "city": "AURANGABAD",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "name": "KIRAN RAJPUT",
+      "email": "rajputsagar7798@gmail.com",
+      "city": "AURANGABAD",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "name": "vaishnavi bedwal",
+      "email": "vaish333@gmail.com",
+      "city": "Aurangabad",
+      "gender": "female",
+      "id": 5
+    }
+  ]
+}

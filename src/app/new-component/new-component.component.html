@@ -1,0 +1,36 @@
+<input type="text" [(ngModel)]="myName">
+<h3 class="fw">This is Normal content =  {{myName}}</h3>
+<h3 class="text-success">lowercase = &nbsp; {{myName  | lowercase}} </h3>
+<h3 class="text-wrning">Titlecase = &nbsp;{{myName  | titlecase}} </h3>
+<h3 class="text-danger">UPPERCASE = &nbsp;{{myName  | uppercase}} </h3><br>
+<h3 class="text-dark">slice Method = &nbsp;{{myName  | slice:4:10}} </h3><br>
+
+<!-- for date
+<p>The Standard date format : {{Date_1 | date}}</p>
+<p>the different date format : {{date_DATE | date: 'mediumDate'}} </p>
+<label for="date" class="form-label"><b>Enter Date Format &nbsp;</b></label>
+<input type="text" [(ngModel)]="date_var">
+<p><b>The date formats</b> : {{Date_1 | date: date_var}}</p>
+
+<h2>JSON Pipe</h2>
+<p>{{StudData | json}}</p>
+<p>splice methohd : {{string_s | slice:2:15}} </p>
+<p>Nuber: {{Number_n | number:'2.5'}} </p> -->
+
+{{TodayString | uppercase | slice:2:15}} <br>
+{{TodayString | titlecase}} <br>
+{{text1 | json}}
+<!-- currancy pipe --> <br>
+{{100 | currency:'INR'}}
+{{100 | currency:'EUR'}}
+{{100 | currency:'GBP'}}
+{{100 | currency:'JPY'}}
+{{100 | currency:'BRL'}}
+{{100 | currency:'CDF'}}
+<H3>{{500 |currency: 'JPY'}} </H3>
+<!-- <h4>{{4.50 | number: '2.3' | customPipe1}} </h4> -->
+<!-- <h2>{{0.565 | customPipe1}} </h2>
+<h2>{{string_s | customPipe1:'uppercase'}} </h2> -->
+
+{{gender | customPipe1:'female'}}
+{{'sagar' | customPipe1:'male'}}

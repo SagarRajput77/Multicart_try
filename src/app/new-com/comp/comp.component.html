@@ -1,0 +1,44 @@
+<p>comp works!</p>
+<div class="container">
+    <form name="myFrm" #frm="ngForm" (ngSubmit)="frm.valid && frm_sub(frm)" >
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" ngModel name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" ngModel name="email">
+        </div>
+        <div class="form-group">
+            <label for="city">city</label>
+            <input type="text" class="form-control" ngModel name="city">
+        </div><br>
+        <div class="form-group">
+            <label for="city">Gender</label>
+            <input type="radio" class="form-control-radio" value="male" ngModel name="gender">
+            <label for="male">Male</label>
+            <input type="radio" class="form-control-radio" value="female" ngModel name="gender">
+            <label for="female">Female</label>
+
+        </div><br>
+        <button class="btn btn-info" type="submit">submit</button>
+    </form>
+</div>
+
+
+<button class="btn btn-info" (click)="fun()">Info</button>
+<table class="table ">
+    <tr><th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>city</th>
+        <th>Gender</th>
+    </tr>
+    <tr *ngFor="let td of arr">
+        <td> {{td.id}}</td>
+        <td> {{td.name | customPipe1:td.gender}}</td>
+        <td> {{td.email}}</td>
+        <td> {{td.city}}</td>
+        <td> {{td.gender}}</td>
+    </tr>
+</table>
