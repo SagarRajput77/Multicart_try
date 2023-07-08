@@ -9,7 +9,8 @@ import { CustomPipe1Pipe } from './Pipe/custom-pipe1.pipe';
 import { ReactiveFormComponent } from './Reactive/reactive-form/reactive-form.component';
 import { RAFNEWComponent } from './raf-new/raf-new.component';
 import { CompComponent } from './new-com/comp/comp.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { Demo1Component } from './demo1/demo1.component'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http'
          ReactiveFormComponent,
          RAFNEWComponent,
          CompComponent,
+         Demo1Component,
          
   ],
   imports: [
